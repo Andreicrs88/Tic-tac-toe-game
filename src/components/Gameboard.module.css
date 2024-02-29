@@ -1,0 +1,77 @@
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 260px;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+#game-board ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#game-board button {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 0 #500884;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+#game-board button:disabled {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 3px 0 #500884;
+}
+
+.x-symbol {
+  color: #31c4be;
+
+  & svg {
+    font-size: 40px;
+  }
+}
+
+.o-symbol {
+  color: #f2b237;
+
+  & svg {
+    font-size: 50px;
+  }
+}
+
+/* responsive layout properties */
+@media (min-width: 500px) {
+  #game-board {
+    margin-block: 3rem;
+  }
+
+  #game-board button {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .x-symbol svg {
+    font-size: 60px;
+  }
+
+  .o-symbol svg {
+    font-size: 80px;
+  }
+}
