@@ -182,7 +182,7 @@ function App() {
       </main>
       <div className={styles.rights}>
         <p>Crisan Andrei</p>
-        <p> © {currentYear} WatchShop™. All rights reserved.</p>
+        <p> © {currentYear} Tic-tac-toe™. All rights reserved.</p>
       </div>
     </>
   );
